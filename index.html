@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./public/icon-park--shopping.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/animations.css">
+  <title>E-commerce store</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>
+    <div class="top-bar">
+      <p class="top-text">Free shipping nationwide</p>
+      <p class="top-text">30-days Return back & Refund Gaurantee</p>
+      <p class="top-text">1 Year Internationl Warranty</p>
+    </div>
+    <nav class="nav-bar">
+      <div class="logo">
+        <p class="P1">Electrons</p>
+        <div class="store">
+          <p class="P2">Store</p>
+        </div>
+      </div>
+      <div class="dropdown-menu">
+        <img src="./public/reorder.png" alt="" class="drop-img">
+        <ul class="items dropdown">
+          <li>Home</li>
+          <li>Products</li>
+          <li>About</li>
+          <li>Contact</li>
+          <div class="log-sign mobile-login">
+            <button class="register">Register</button>
+            <button class="login">Login</button>
+          </div>
+        </ul>
+      </div>
+      <div class="log-sign">
+        <a href="./src/cart.html" class="cart-button">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <span class="cart-number">0</span>
+        </a>
+        <div class="clear-cart">
+          <p>Clear all</p>
+          <img src="./public/pajamas--clear.png" alt="">
+        </div>
+        <button class="register pc-login">Register</button>
+        <button class="login pc-login">Login</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="background">
+      <div class="main-content">
+        <h3>Explore the Latest in Tech Industries</h3>
+        <h1>Your Destination for Cutting-Edge Gadgets!</h1>
+        <p>Welcome to Electrons E-Commerce Store, your ultimate destination for cutting-edge
+          gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a world of
+          possibilities!
+        </p>
+        <button class="explore-btn">Explore Our Products</button>
+      </div>
+      <img src="./public/bg.svg" alt="">
+    </div>
+  </main>
+  <section>
+    <div class="sale">
+      <div class="items">
+        <div class="details">
+          <p>New Year Sale</p>
+          <h3>Extra 50% OFF on Laptops</h3>
+          <a href="">SHOP NOW!</a>
+        </div>
+        <div class="pic">
+          <img src="./public/laptop-CT_LaLd8.png" alt="">
+        </div>
+      </div>
+      <div class="items">
+        <div class="details">
+          <p>New Year Sale</p>
+          <h3>40% OFF on Headphones</h3>
+          <a href="">SHOP NOW!</a>
+        </div>
+        <div class="pic">
+          <img src="./public/headphoneEcom-Cx8W04La.png" alt="">
+        </div>
+      </div>
+      <div class="items">
+        <div class="details">
+          <p>New Year Sale</p>
+          <h3>Get 30% OFF on Mobiles</h3>
+          <a href="">SHOP NOW!</a>
+        </div>
+        <div class="pic">
+          <img src="./public/mobiles-BWFz1yVQ.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="benefits">
+      <h2>Why Choose Electrons Store</h2>
+      <div class="why-us">
+        <div class="item">
+          <img src="./public/fa-solid--shipping-fast.png" alt="">
+          <div class="details">
+            <h4>Worldwide Shipping</h4>
+            <p>Order above $100</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./public/icon-park-outline--return (1).png" alt="">
+          <div class="details">
+            <h4>Easy 30 Day Returns</h4>
+            <p>Back Returns in 7 Days</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./public/ph--money-bold.png" alt="">
+          <div class="details">
+            <h4>Money back Gaurantee</h4>
+            <p>Gaurantee with in 30-Days</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./public/fluent--person-support-28-filled.png" alt="">
+          <div class="details">
+            <h4>Easy Online Support</h4>
+            <p>24/7 Any time support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-popup success-toast"><span>Added Product Succesfully.</span></div>
+    <div class="toast-popup fill-toast"><span>Fill all fields First !</span></div>
+    <div class="toast-popup cart-toast"><span>Added to Cart Succesfully.</span></div>
+    <div class="container">
+      <button class="add-products-btn">Add more Products</button>
+      <form class="add-p-popup">
+        <div class="title-close">
+          <h3>Enter details</h3>
+          <img src="./public/ic--round-close.png" alt="" class="popup-close">
+        </div>
+        <label for="for-category">Catergory</label>
+        <input type="text" id="for-category" class="popup-input" placeholder="Enter category" required>
+        <label for="for-p-name">Name</label>
+        <input type="text" id="for-p-name" class="popup-input" placeholder="Enter name" required>
+        <label for="for-description">Description</label>
+        <textarea type="text" id="for-description" class="popup-input" placeholder="Enter description"
+          required></textarea>
+        <label for="for-price-was">Previous Price</label>
+        <input type="number" id="for-price-was" class="popup-input" placeholder="Enter previous price" required>
+        <label for="for-price-now">Price now</label>
+        <input type="number" id="for-price-now" class="popup-input" placeholder="Enter price now" required>
+        <label for="for-stock">Stock</label>
+        <input type="number" id="for-stock" class="popup-input" placeholder="Enter stock" required>
+        <label for="for-image">Image</label>
+        <input id="for-image" type="file" accept="image/*" class="add-image" style="background-color: transparent;">
+        <button class="add-product" type="button" onclick="validateinput()">Add</button>
+      </form>
+      <div class="card no1">
+        <div class="category">Computers</div>
+        <div class="card-img">
+          <img src="./public/lapi.png" alt="">
+        </div>
+        <p class="product-name">
+          Laptop
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>4.6</p>
+        </div>
+        <div class="product-description">
+          Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>79,999</span>
+          </div>
+          <div class="price-actual">
+            85,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">30</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card no2">
+        <div class="category">Mobiles</div>
+        <div class="card-img">
+          <img src="./public/iphone.png" alt="">
+        </div>
+        <p class="product-name">
+          Smartphone
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>3.8</p>
+        </div>
+        <div class="product-description">
+          Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery.
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>29,999</span>
+          </div>
+          <div class="price-actual">
+            35,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">50</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card no3">
+        <div class="category">Audio</div>
+        <div class="card-img">
+          <img src="./public/headphone.png" alt="">
+        </div>
+        <p class="product-name">
+          Wireless Headphones
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>4.0</p>
+        </div>
+        <div class="product-description">
+          High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>10,999</span>
+          </div>
+          <div class="price-actual">
+            12,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">15</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card no4">
+        <div class="category">Wearables</div>
+        <div class="card-img">
+          <img src="./public/watch.png" alt="">
+        </div>
+        <p class="product-name">
+          Watches
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>4.9</p>
+        </div>
+        <div class="product-description">
+          Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish
+          silver
+          color.
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>15,999</span>
+          </div>
+          <div class="price-actual">
+            17,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">60</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card no5">
+        <div class="category">Audio</div>
+        <div class="card-img">
+          <img src="./public/speakers.png" alt="">
+        </div>
+        <p class="product-name">
+          Speakers
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>4.2</p>
+        </div>
+        <div class="product-description">
+          High-quality loud speakers with good looking design, 10 hours of battery life, and a sleek black color.
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>19,999</span>
+          </div>
+          <div class="price-actual">
+            22,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">30</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+      <div class="card no6">
+        <div class="category">Video</div>
+        <div class="card-img">
+          <img src="./public/tv.png" alt="">
+        </div>
+        <p class="product-name">
+          Television
+        </p>
+        <div class="rating">
+          <img src="./public/emojione--star.png" alt="">
+          <p>4.5</p>
+        </div>
+        <div class="product-description">
+          LED TV with a 32-inch HDR AMOLED display, Sleek design, Rich colours, Android and Google support and a stylish
+          silver color.
+        </div>
+        <div class="product-price">
+          <div class="price-now">
+            PKR <span>60,999</span>
+          </div>
+          <div class="price-actual">
+            62,999
+          </div>
+        </div>
+        <div class="total-stock">
+          <p>Total Stocks Available: <span class="stocks">10</span></p>
+        </div>
+        <div class="quantitytobuy">
+          <p class="quantity">Quantity: </p>
+          <div class="plus-minus">
+            <p class="plus">+</p>
+            <p class="count">1</p>
+            <p class="minus">-</p>
+          </div>
+        </div>
+        <div class="addtocart">
+          <img src="./public/mdi--cart-outline.png" alt="">
+          <button class="add-items-to-cart" type="submit">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="why-choose-us">
+      <div class="title-detail">
+        <h2>Why Choose Electrons Store?</h2>
+        <p>Choose Electrons store for a best products experience that provides high quality and long life products.</p>
+      </div>
+      <div class="advantages">
+        <div class="left-side">
+          <div class="section left">
+            <div class="marking">1</div>
+            <h3>Wide Selection</h3>
+            <p>Electrons store offer a diverse range of gadgets, from smartphones to smart home devices, ensuring you
+              find what you need to elevate your lifestyle and meet your tech requirements. Electrons Store undergoes
+              rigorous quality checks.</p>
+          </div>
+          <div class="section left">
+            <div class="marking">2</div>
+            <h3>Quality Assurance</h3>
+            <p>Every gadget at Electrons Store undergoes rigorous quality checks, guaranteeing reliability and
+              performance, so you can shop with confidence knowing you're getting the best.</p>
+          </div>
+          <div class="section left">
+            <div class="marking">3</div>
+            <h3>Competitive Prices</h3>
+            <p>Enjoy great value with Electrons Store's competitive prices on high-quality gadgets, making
+              top-of-the-line technology accessible to all without compromising on quality or performance.</p>
+          </div>
+        </div>
+        <div class="center-figure">
+          <img src="./public/business-illustration-art-work_690899-127-removebg-preview.png" alt="">
+        </div>
+        <div class="right-side">
+          <div class="section right">
+            <div class="marking">4</div>
+            <h3>Expert Guidance</h3>
+            <p>Our knowledgeable staff provides expert guidance, helping you choose the right gadget to meet your needs
+              and preferences, ensuring you make informed decisions every step of the way.</p>
+          </div>
+          <div class="section right">
+            <div class="marking">5</div>
+            <h3>Convenient Shopping</h3>
+            <p>With Electrons Store, shopping for gadgets is easy and convenient. Our user-friendly website and secure
+              payment options ensure a seamless experience from browsing to checkout, all from the comfort of your home.
+            </p>
+          </div>
+          <div class="section right">
+            <div class="marking">6</div>
+            <h3>Excellent Service</h3>
+            <p>Electrons Store is committed to providing excellent service to our customers. From prompt assistance with
+              inquiries to efficient handling of orders and deliveries, we prioritize your satisfaction every step of
+              the way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="store-info">
+      <div>
+        <div class="logo  footer-logo">
+          <p class="P1 footer-p1">Electrons</p>
+          <div class="store footer-store">
+            <p class="P2 footer-p2">Store</p>
+          </div>
+        </div>
+      </div>
+      <div class="welcome">
+        Welcome to Electrons Store, your ultimate destination for cutting-edge gadgets!
+      </div>
+      <div class="pay-icon">
+        <img src="./public/Minimal-Credit-Card-Icons-removebg-preview.png" alt="">
+      </div>
+    </div>
+    <ul class="shopping">
+      <li>Shopping</li>
+      <li>Computer Store</li>
+      <li>Laptop Store</li>
+      <li>Accessories</li>
+      <li>Sales & Discounts</li>
+    </ul>
+    <ul class="experience">
+      <li>Experience</li>
+      <li>Contact us</li>
+      <li>Payment Method</li>
+      <li>Delivery</li>
+      <li>Return & Exchange</li>
+    </ul>
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <p>Be the first to know about new arrivals, sales & promos!</p>
+      <input type="text" placeholder="Your Email">
+      <button type="submit">Submit</button>
+    </div>
+  </footer>
+
+  <script src="./src/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="./src/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../public/icon-park--shopping.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>E-commerce store</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <p class="top-text">Free shipping nationwide</p>
+            <p class="top-text">30-days Return back & Refund Gaurantee</p>
+            <p class="top-text">1 Year Internationl Warranty</p>
+        </div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <p class="P1">Electrons</p>
+                <div class="store">
+                    <p class="P2">Store</p>
+                </div>
+            </div>
+            <div class="dropdown-menu">
+                <img src="../public/reorder.png" alt="" class="drop-img">
+                <ul class="items dropdown">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <div class="log-sign mobile-login">
+                        <button class="register">Register</button>
+                        <button class="login">Login</button>
+                    </div>
+                </ul>
+            </div>
+            <div class="log-sign">
+                <a href="./cart.html" class="cart-button">
+                    <img src="../public/mdi--cart-outline.png" alt="">
+                    <span class="cart-number">0</span>
+                </a>
+                <div class="clear-cart">
+                    <p>Clear all</p>
+                    <img src="../public/pajamas--clear.png" alt="">
+                </div>
+                <button class="register pc-login">Register</button>
+                <button class="login pc-login">Login</button>
+            </div>
+        </nav>
+    </header>
+    <div class="sections">
+        <div class="carted-items">
+            <div class="actions">
+                <div class="select">
+                    <input id="check-all" class="main-check" type="checkbox">
+                    <label class='select-btn'>Select all</label>
+                </div>
+                <div class="del-btn">
+                    <img src="../public/material-symbols-light--delete-outline-rounded.png" alt="">
+                    <p>Delete</p>
+                </div>
+            </div>
+            <div class="separater"></div>
+            <div class="checkout-items">
+                <div class="item1">
+                    <input id="check-all" type='checkbox'>
+                    <div class="product-to-cart">
+                        <img src="../public/lapi.png" alt="" class="p-image">
+                        <div class="cart-p-details">
+                            <div class="p-name">Laptop</div>
+                            <div class="cart-p-description">Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display</div>
+                        </div>
+                        <div class="cart-p-price">
+                            <div class="cart-p-p-now">PKR <span>79,999</span></div>
+                            <div class="cart-p-p-org">PKR <span>85,999</span></div>
+                        </div>
+                        <div class="cart-p-del-btn">
+                            <img src="../public/material-symbols-light--delete-outline-rounded.png" alt="">
+                            <p>Delete</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <!-- <input id="check-all" type='checkbox'>
+                    <div class="product">P2</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="checkout-box">
+            <div class="location-tab">
+                <label for="location">Location</label>
+                <input id="location" class="deliver-location" type="text" placeholder="Enter your location">
+            </div>
+            <p class="summary">Order Summary</p>
+            <div class="sub-total">
+                <p>Subtotal</p>
+                <p>Rs. <span class="sub-price">0</span></p>
+            </div>
+            <div class="shipping-fee">
+                <p>Shipping Fee</p>
+                <p>Rs. <span class="shipping-charge">0</span></p>
+            </div>
+            <div class="voucher-box">
+                <input id="" class="check-inputs" type="text" placeholder="Enter Voucher Code">
+                <button class="apply-btn">Apply</button>
+            </div>
+            <div class="last-total">
+                <p>Total</p>
+                <p>Rs. <span class="total-price">0</span></p>
+            </div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <script src="./cart.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

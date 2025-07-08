@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: #8ab5f9;
+    --secondary-color: #191919;
+    --background-color: #0057ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(../public/2148847751.jpg);
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.section {
+    display: flex;
+}
+
+.home-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.home-btn img {
+    height: 40px;
+    width: 40px;
+}
+
+.welcome-section {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.welcome-section>p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    width: 50%;
+    height: 100vh;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgba(104, 104, 104, 0.2);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-section>h2 {
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.email,
+.password,
+.person-name,
+.repeat-pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.password label,
+.email label,
+.person-name label,
+.repeat-pass label {
+    font-size: 13px;
+    color: white;
+}
+
+.email input,
+.password input,
+.person-name input,
+.repeat-pass input {
+    all: unset;
+    color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    height: 50px;
+    width: 25vw;
+    border: 1px solid white;
+    padding-left: 20px;
+}
+
+.email input::placeholder,
+.password input::placeholder,
+.person-name input::placeholder,
+.repeat-pass input::placeholder {
+    color: rgb(196, 196, 196);
+}
+
+.options {
+    display: flex;
+    column-gap: 8vw;
+    color: rgb(211, 211, 211);
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    column-gap: 7px;
+}
+
+.remember-me label,
+.remember-me input {
+    cursor: pointer;
+}
+
+.forgot-pass {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.login-btn {
+    all: unset;
+    width: 25vw;
+    height: 50px;
+    background-color: var(--background-color);
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1966ff;
+    }
+}
+
+.create-acc {
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+}
+
+@media (width<=1280px) {
+
+    .email input,
+    .password input,
+    .login-btn,
+    .person-name input,
+    .repeat-pass input {
+        width: 30vw;
+    }
+}
+
+@media (width<=768px) {
+
+    .person-name input,
+    .repeat-pass input,
+    .email input,
+    .password input,
+    .login-btn {
+        width: 35vw;
+    }
+
+    .options {
+        column-gap: 5vw;
+        font-size: 13px;
+    }
+
+    .welcome-section>p {
+        font-size: 15px;
+    }
+
+    .welcome-section h2 {
+        font-size: 27px;
+    }
+}
+
+@media (width<=440px) {
+    body::before {
+        background: url(../public/11zon_cropped.jpeg);
+    }
+
+    .welcome-section {
+        display: none;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-section {
+        border-radius: 10px;
+        width: 70%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .person-name input,
+    .repeat-pass input,
+    .email input,
+    .password input,
+    .login-btn {
+        height: 45px;
+        width: 50vw;
+    }
+
+    .options {
+        column-gap: 4vw;
+        font-size: 12px;
+    }
+
+    .create-acc {
+        font-size: 12px;
+    }
+
+    .home-btn {
+        left: 10px;
+        top: 10px;
+    }
+}
